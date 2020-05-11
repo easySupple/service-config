@@ -19,7 +19,7 @@ eureka:
 
 ---
 server:
-  port:  7005
+  port: 7005
 
 spring:
   profiles: test
