@@ -4,30 +4,30 @@ spring:
       - dev
 ---
 server:
-  port:  7004
+  port: 7004
 
 spring:
-  profiles:  dev
+  profiles: dev
   application:
-    name:  microservice-consumer-config-clent
+    name: microservice-consumer-config-clent
 
 eureka:
   client:
-    register-with-eureka:  false
+    register-with-eureka: false
     service-url:
       defaultZone: http://eureka9003.com:9003/eureka/,http://eureka9002.com:9002/eureka/,http://eureka9001.com:9001/eureka/
 
 ---
 server:
-  port:  7005
+  port: 7005
 
 spring:
-  profiles:  test
+  profiles: test
   application:
-    name:  microservice-consumer-config-clent
+    name: microservice-consumer-config-clent
 
 eureka:
   client:
-    register-with-eureka:  false
+    register-with-eureka: false
     service-url:
       defaultZone: http://eureka9003.com:9003/eureka/,http://eureka9002.com:9002/eureka/,http://eureka9001.com:9001/eureka/
